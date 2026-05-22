@@ -30,7 +30,6 @@ Projeto de portfólio com foco em demonstrar, de forma prática e objetiva, comp
 - [Evoluções futuras](#evoluções-futuras)
 - [Extensão opcional para GCP e BigQuery](#extensão-opcional-para-gcp-e-bigquery)
 - [Prints e Evidências de Execução](#prints-e-evidências-de-execução)
-- [Demonstração no VS Code (Sem Codex)](#demonstração-no-vs-code-sem-codex)
 - [Publicação no GitHub](#publicação-no-github)
 - [Sugestão de descrição para LinkedIn](#sugestão-de-descrição-para-linkedin)
 - [Autor](#autor)
@@ -399,17 +398,6 @@ Nome do arquivo: `08_data_quality_sql_checks.png`
 Pasta: `docs/screenshots/05_tests_ci`
 Nome do arquivo: `09_pytest_passed.png`
 ![Pytest Passed](docs/screenshots/05_tests_ci/09_pytest_passed.png)
-
-### 10) Pipeline de CI no GitHub Actions
-Pasta: `docs/screenshots/05_tests_ci`
-Nome do arquivo: `10_github_actions_ci_workflow.png`
-![GitHub Actions Workflow](docs/screenshots/05_tests_ci/10_github_actions_ci_workflow.png)
-
-## Demonstração no VS Code (Sem Codex)
-
-Janela escolhida: arquivo `.github/workflows/ci.yml` aberto no VS Code, exibindo o pipeline de CI completo.
-
-![VS Code CI Workflow](docs/screenshots/05_tests_ci/10_github_actions_ci_workflow.png)
 
 ## Publicação no GitHub
 
