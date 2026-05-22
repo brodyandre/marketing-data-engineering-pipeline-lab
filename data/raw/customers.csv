@@ -1,0 +1,13 @@
+customer_id,user_pseudo_id,first_seen_date,customer_segment,city,state
+CUST_0001,u_1001,2026-01-12,new,Sao Paulo,SP
+CUST_0002,u_1002,2026-01-19,returning,Rio de Janeiro,RJ
+CUST_0003,u_1003,2026-02-03,churn_risk,Belo Horizonte,MG
+CUST_0004,u_1004,2026-02-07,new,Curitiba,PR
+CUST_0005,u_1005,2026-02-10,vip,Porto Alegre,RS
+CUST_0006,u_1006,2026-02-14,returning,Recife,PE
+CUST_0007,u_1007,2026-02-20,new,Campinas,SP
+CUST_0008,u_1008,2026-02-24,returning,Florianopolis,SC
+CUST_0009,u_1009,2026-02-27,vip,Salvador,BA
+CUST_0010,u_1010,2026-03-01,new,Fortaleza,CE
+CUST_0011,u_1011,2026-03-02,returning,Goiania,GO
+CUST_0012,u_1012,2026-03-03,new,Brasilia,DF
