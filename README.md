@@ -30,8 +30,6 @@ Projeto de portfólio com foco em demonstrar, de forma prática e objetiva, comp
 - [Evoluções futuras](#evoluções-futuras)
 - [Extensão opcional para GCP e BigQuery](#extensão-opcional-para-gcp-e-bigquery)
 - [Prints e Evidências de Execução](#prints-e-evidências-de-execução)
-- [Publicação no GitHub](#publicação-no-github)
-- [Sugestão de descrição para LinkedIn](#sugestão-de-descrição-para-linkedin)
 - [Autor](#autor)
 
 ## Objetivo do Projeto
@@ -399,20 +397,10 @@ Pasta: `docs/screenshots/05_tests_ci`
 Nome do arquivo: `09_pytest_passed.png`
 ![Pytest Passed](docs/screenshots/05_tests_ci/09_pytest_passed.png)
 
-## Publicação no GitHub
-
-```bash
-git init
-git add .
-git commit -m "feat: add marketing data engineering pipeline lab"
-git branch -M main
-git remote add origin https://github.com/brodyandre/marketing-data-engineering-pipeline-lab.git
-git push -u origin main
-```
-
-## Sugestão de descrição para LinkedIn
-
-Neste projeto, desenvolvi um pipeline de Engenharia de Dados de marketing ponta a ponta com dados sintéticos inspirados em GA4 e Google Ads, aplicando Python, modelagem dimensional, SQL analítico, validações de qualidade, PostgreSQL, Docker e CI com GitHub Actions em um fluxo reproduzível e orientado a cenários reais de negócio.
+### 10) Pipeline de CI no GitHub Actions
+Pasta: `docs/screenshots/05_tests_ci`
+Nome do arquivo: `10_github_actions_ci_workflow.png`
+![GitHub Actions Workflow](docs/screenshots/05_tests_ci/10_github_actions_ci_workflow.png)
 
 ## Autor
 
