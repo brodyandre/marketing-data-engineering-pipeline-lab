@@ -398,8 +398,7 @@ Nome do arquivo: `09_pytest_passed.png`
 ![Pytest Passed](docs/screenshots/05_tests_ci/09_pytest_passed.png)
 
 ### 10) Pipeline de CI no GitHub Actions
-Pasta: `docs/screenshots/05_tests_ci`
-Nome do arquivo: `10_github_actions_ci_workflow.png`
+### Print do fluxo de execução do pipeline de dados.
 ![GitHub Actions Workflow](docs/screenshots/05_tests_ci/10_github_actions_ci_workflow.png)
 
 ## Autor
