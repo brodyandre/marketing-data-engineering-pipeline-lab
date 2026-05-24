@@ -34,6 +34,8 @@ Projeto de portfólio com foco em demonstrar, de forma prática e objetiva, comp
 
 ## Objetivo do Projeto
 
+[Voltar ao Sumário](#sumario)
+
 Construir um pipeline de dados de marketing digital ponta a ponta para demonstrar habilidades de:
 
 - ingestão e transformação de dados com Python;
@@ -43,6 +45,8 @@ Construir um pipeline de dados de marketing digital ponta a ponta para demonstra
 - versionamento, testes e CI.
 
 ## Problema de Negócio Simulado
+
+[Voltar ao Sumário](#sumario)
 
 Um time de Marketing Performance precisa consolidar dados de múltiplas fontes para responder perguntas como:
 
@@ -55,7 +59,11 @@ O projeto resolve esse problema com um pipeline reproduzível, transparente e or
 
 ## Arquitetura da Solução
 
+[Voltar ao Sumário](#sumario)
+
 ### Diagrama textual da arquitetura
+
+[Voltar ao Sumário](#sumario)
 
 ```text
 Fontes simuladas
@@ -74,6 +82,8 @@ Consultas SQL, métricas e análises de performance
 
 ### Fluxo operacional
 
+[Voltar ao Sumário](#sumario)
+
 1. `extract`: lê os arquivos em `data/raw`.
 2. `transform`: padroniza e cria `dim_date`, `dim_campaign`, `dim_customer`, `dim_device` e `fact_marketing_performance`.
 3. `quality`: valida integridade, nulos, métricas negativas e consistência de datas.
@@ -81,6 +91,8 @@ Consultas SQL, métricas e análises de performance
 5. `load`: cria schema `analytics` e carrega tabelas no PostgreSQL.
 
 ## Tecnologias Utilizadas
+
+[Voltar ao Sumário](#sumario)
 
 | Tecnologia | Papel no projeto | Nível de uso |
 |---|---|---|
@@ -94,6 +106,8 @@ Consultas SQL, métricas e análises de performance
 | GitHub Actions | Integração contínua | Engenharia de software |
 
 ## Competências Demonstradas Neste Projeto
+
+[Voltar ao Sumário](#sumario)
 
 | Competência | Evidência prática no repositório |
 |---|---|
@@ -110,6 +124,8 @@ Consultas SQL, métricas e análises de performance
 | Boas práticas de versionamento | Estrutura modular, testes e CI |
 
 ## Estrutura do Projeto
+
+[Voltar ao Sumário](#sumario)
 
 ```text
 marketing-data-engineering-pipeline-lab/
@@ -158,6 +174,8 @@ marketing-data-engineering-pipeline-lab/
 
 ## Como Executar Localmente
 
+[Voltar ao Sumário](#sumario)
+
 1. Clonar o repositório:
 
 ```bash
@@ -184,6 +202,8 @@ cp .env.example .env
 ```
 
 ## Como Rodar com Docker
+
+[Voltar ao Sumário](#sumario)
 
 Subir PostgreSQL local:
 
@@ -226,6 +246,8 @@ docker compose up -d
 
 ## Como Executar o Pipeline
 
+[Voltar ao Sumário](#sumario)
+
 Execução completa:
 
 ```bash
@@ -242,6 +264,8 @@ python -m src.load
 ```
 
 ## Comandos Makefile
+
+[Voltar ao Sumário](#sumario)
 
 ```bash
 make install
@@ -263,11 +287,15 @@ make down
 
 ## Como Rodar Testes
 
+[Voltar ao Sumário](#sumario)
+
 ```bash
 pytest
 ```
 
 ## Integração Contínua com GitHub Actions
+
+[Voltar ao Sumário](#sumario)
 
 Workflow em [`.github/workflows/ci.yml`](./.github/workflows/ci.yml), executado em:
 
@@ -283,6 +311,8 @@ Etapas da CI:
 5. execução de testes com `pytest`.
 
 ## Modelo de Dados
+
+[Voltar ao Sumário](#sumario)
 
 Modelo dimensional em schema `analytics`:
 
@@ -302,6 +332,8 @@ Detalhamento: [`docs/data_model.md`](./docs/data_model.md)
 
 ## Consultas Analíticas Disponíveis
 
+[Voltar ao Sumário](#sumario)
+
 Arquivo: [`sql/04_analytics_queries.sql`](./sql/04_analytics_queries.sql)
 
 Exemplos:
@@ -315,6 +347,8 @@ Validações SQL: [`sql/05_data_quality_checks.sql`](./sql/05_data_quality_check
 
 ## Por que este projeto é relevante para Engenharia de Dados?
 
+[Voltar ao Sumário](#sumario)
+
 Porque demonstra o ciclo técnico completo esperado em times de dados:
 
 - ingestão e normalização de múltiplas fontes;
@@ -327,6 +361,8 @@ Em contexto de recrutamento, evidencia domínio de fundamentos com foco em execu
 
 ## Como este projeto se conecta a cenários reais de negócio?
 
+[Voltar ao Sumário](#sumario)
+
 Mesmo com dados sintéticos, o desenho reproduz desafios reais:
 
 - consolidação de dados de marketing com granularidades diferentes;
@@ -338,6 +374,8 @@ Esse padrão é aplicável a e-commerce, SaaS, educação, fintech e operações
 
 ## Evoluções futuras
 
+[Voltar ao Sumário](#sumario)
+
 1. Orquestração com Airflow.
 2. Camada de transformação com dbt.
 3. Testes de integração com PostgreSQL na CI.
@@ -346,62 +384,92 @@ Esse padrão é aplicável a e-commerce, SaaS, educação, fintech e operações
 
 ## Extensão opcional para GCP e BigQuery
 
+[Voltar ao Sumário](#sumario)
+
 Há uma proposta de evolução da arquitetura para Google Cloud Platform, mantendo o foco didático e sem qualquer credencial real neste repositório.
 
 Documentação: [`docs/gcp_bigquery_extension.md`](./docs/gcp_bigquery_extension.md)
 
 ## Prints e Evidências de Execução
 
+[Voltar ao Sumário](#sumario)
+
 ### 1) Docker Compose com PostgreSQL saudável
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/01_setup`
 Nome do arquivo: `01_docker_compose_ps_healthy.png`
 ![Docker Compose Healthy](docs/screenshots/01_setup/01_docker_compose_ps_healthy.png)
 
 ### 2) Execução completa do pipeline
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/02_pipeline`
 Nome do arquivo: `02_pipeline_run_success.png`
 ![Pipeline Success](docs/screenshots/02_pipeline/02_pipeline_run_success.png)
 
 ### 3) Artefatos processados gerados
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/02_pipeline`
 Nome do arquivo: `03_processed_files_generated.png`
 ![Processed Files](docs/screenshots/02_pipeline/03_processed_files_generated.png)
 
 ### 4) Tabelas do schema analytics no PostgreSQL
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/03_database`
 Nome do arquivo: `04_postgres_analytics_tables.png`
 ![Analytics Tables](docs/screenshots/03_database/04_postgres_analytics_tables.png)
 
 ### 5) Estrutura da fato com PK/FKs
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/03_database`
 Nome do arquivo: `05_fact_table_constraints.png`
 ![Fact Constraints](docs/screenshots/03_database/05_fact_table_constraints.png)
 
 ### 6) Query de negócio: receita por campanha
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/04_queries`
 Nome do arquivo: `06_query_revenue_by_campaign.png`
 ![Revenue by Campaign](docs/screenshots/04_queries/06_query_revenue_by_campaign.png)
 
 ### 7) Query de negócio: performance por dispositivo
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/04_queries`
 Nome do arquivo: `07_query_device_performance.png`
 ![Device Performance](docs/screenshots/04_queries/07_query_device_performance.png)
 
 ### 8) Data quality checks em SQL
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/04_queries`
 Nome do arquivo: `08_data_quality_sql_checks.png`
 ![Data Quality SQL Checks](docs/screenshots/04_queries/08_data_quality_sql_checks.png)
 
 ### 9) Testes automatizados com pytest
+
+[Voltar ao Sumário](#sumario)
 Pasta: `docs/screenshots/05_tests_ci`
 Nome do arquivo: `09_pytest_passed.png`
 ![Pytest Passed](docs/screenshots/05_tests_ci/09_pytest_passed.png)
 
 ### 10) Pipeline de CI no GitHub Actions
+
+[Voltar ao Sumário](#sumario)
+
 #### Print do fluxo de execução do pipeline de dados.
+
+Pasta: `docs/screenshots/05_tests_ci`
+Nome do arquivo: `10_github_actions_ci_workflow.png`
 ![GitHub Actions Workflow](docs/screenshots/05_tests_ci/10_github_actions_ci_workflow.png)
 
 ## Autor
+
+[Voltar ao Sumário](#sumario)
 
 **Luiz André de Souza**
 
